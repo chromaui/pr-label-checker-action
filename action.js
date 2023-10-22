@@ -52,7 +52,7 @@ function action({ labels = [] } = {}, api = core) {
   }
 }
 
-if (require.main === module) {
+if (!process.env.VITEST) {
   action(context.payload.pull_request)
 }
 
