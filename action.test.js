@@ -1,6 +1,6 @@
 import { afterEach, expect, test, vi } from "vitest"
 
-import action from "./action"
+import { action } from "./action"
 
 const api = {
   info: vi.fn(),

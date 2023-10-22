@@ -1,7 +1,7 @@
 import * as core from "@actions/core"
 import { context } from "@actions/github"
 
-function action({ labels = [] } = {}, api = core) {
+export function action({ labels = [] } = {}, api = core) {
   const prLabels = labels.map(({ name }) => name)
   api.info(`Found PR labels: ${prLabels.join(", ")}`)
 
@@ -55,5 +55,3 @@ function action({ labels = [] } = {}, api = core) {
 if (!process.env.VITEST) {
   action(context.payload.pull_request)
 }
-
-module.exports = action
