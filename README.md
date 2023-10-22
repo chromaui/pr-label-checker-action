@@ -1,5 +1,7 @@
 # PR Label Checker Action
 
+Test
+
 A GitHub Action that requires PR labels before merging.
 
 ## Usage
