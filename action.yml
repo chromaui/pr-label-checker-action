@@ -2,7 +2,7 @@ name: "PR Label Checker"
 description: "An action that checks if the PR has the required labels."
 runs:
   using: "node20"
-  main: "action.js"
+  main: "dist/index.js"
 inputs:
   all-of:
     description: "All of these labels must be present."
