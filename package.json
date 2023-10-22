@@ -1,11 +1,12 @@
 {
   "name": "pr-label-checker-action",
   "version": "1.0.0",
-  "main": "action.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/chromaui/pr-label-checker-action.git",
   "author": "Chromatic <support@chromatic.com>",
   "type": "module",
   "scripts": {
+    "build": "npx @vercel/ncc build action.js",
     "start": "node ./action.js",
     "test": "vitest",
     "lint": "prettier --check .",

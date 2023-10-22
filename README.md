@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - uses: chromaui/pr-label-checker-action
+      - uses: chromaui/pr-label-checker-action@main
         with:
           one-of: |
             major, minor, patch
