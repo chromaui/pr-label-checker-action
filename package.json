@@ -1,0 +1,21 @@
+{
+  "name": "pr-label-checker-action",
+  "version": "1.0.0",
+  "main": "action.js",
+  "repository": "https://github.com/chromaui/pr-label-checker-action.git",
+  "author": "Chromatic <support@chromatic.com>",
+  "type": "module",
+  "scripts": {
+    "start": "node ./action.js",
+    "test": "vitest",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.6"
+  }
+}

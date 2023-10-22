@@ -1,0 +1,15 @@
+name: "PR Label Checker"
+description: "An action that checks if the PR has the required labels."
+runs:
+  using: "node20"
+  main: "action.js"
+inputs:
+  all-of:
+    description: "All of these labels must be present."
+  one-of:
+    description: "Exactly one of these labels must be present."
+  none-of:
+    description: "None of these labels may be present."
+branding:
+  icon: "check-square"
+  color: "green"
