@@ -16,11 +16,9 @@ jobs:
   check-labels:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 20
-      - run: yarn
       - uses: chromaui/pr-label-checker-action
         with:
           one-of: |
