@@ -1,7 +1,7 @@
 name: "PR Label Checker"
 description: "An action that checks if the PR has the required labels."
 runs:
-  using: "node20"
+  using: "node24"
   main: "dist/index.js"
 inputs:
   all-of:
